@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Local Shops</title>
+
+<style>
+
+body{
+  font-family:Arial, sans-serif;
+  margin:0;
+  background:#f5f5f5;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  background:#004d40;
+  padding:25px 40px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+/* LOGO */
+.logo{
+  color:white;
+  font-size:32px;
+  font-weight:bold;
+}
+
+/* NAV LINKS */
+.nav-links{
+  display:flex;
+  gap:25px;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ffd54f;
+}
+
+/* CONTENT */
+.content{
+  text-align:center;
+  padding:70px 20px 40px;
+}
+
+.content h1{
+  font-size:58px;
+  color:#004d40;
+  margin-bottom:15px;
+}
+
+.content p{
+  font-size:22px;
+  color:#555;
+  max-width:900px;
+  margin:auto;
+}
+
+/* SHOPS */
+.products{
+  display:flex;
+  justify-content:center;
+  gap:35px;
+  flex-wrap:wrap;
+  padding:20px 20px 70px;
+}
+
+/* SHOP CARD */
+.product-card{
+  background:white;
+  width:320px;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 5px 18px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.product-card:hover{
+  transform:translateY(-8px);
+}
+
+/* IMAGE */
+.product-card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+
+/* CARD CONTENT */
+.card-content{
+  padding:25px;
+}
+
+.card-content h2{
+  color:#004d40;
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.card-content p{
+  color:#555;
+  line-height:1.7;
+  margin-bottom:15px;
+  font-size:17px;
+}
+
+.location{
+  color:#00796b;
+  font-weight:bold;
+}
+
+/* ORDER BUTTON */
+.order-btn{
+  display:inline-block;
+  margin-top:15px;
+  background:#009688;
+  color:white;
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.order-btn:hover{
+  background:#00796b;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  header{
+    padding:20px;
+  }
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .logo{
+    font-size:28px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .nav-links a{
+    font-size:16px;
+  }
+
+  .content h1{
+    font-size:40px;
+  }
+
+  .content p{
+    font-size:18px;
+  }
+
+  .product-card{
+    width:95%;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+EcoTravel 🌍
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="awareness.html">Awareness</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h1>Local Shops & Delicacies 🛍</h1>
+
+<p>
+Discover local delicacies, eco-friendly products, and souvenir shops from different tourist destinations around Magalang Pampanga and Arayat Pampanga.
+
+</div>
+
+<!-- SHOPS -->
+<div class="products">
+
+<!-- SHOP 1 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/pabalan.jpg" alt="Strawberry Store">
+
+<div class="card-content">
+
+<h2>Pabalan</h2>
+
+<p>
+Pabalan Delicacies Famous for pastillas de leche (carabao milk),
+Also sells polvoron, yema, and other sweets, 
+Very popular pasalubong shop in Magalang
+</p>
+
+<p class="location">
+📍 Magalang, Pampanga
+</p>
+
+<a href="order.html" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+<!-- SHOP 2 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/carreon.jpg" alt="Adventure Gear Shop">
+
+<div class="card-content">
+
+<h2>Carreon Sweets & Pastries</h2>
+
+<p>
+Known for classic Kapampangan delicacies, 
+ Pastillas, ensaymada, cakes, and baked goods
+</p>
+
+<p class="location">
+📍 Magalang, Pampanga
+</p>
+
+<a href="#" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+<!-- SHOP 3 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/des.jpg" alt="Eco Living Store">
+
+<div class="card-content">
+
+<h2>Des Chocolats Pampanga</h2>
+
+<p>
+Chocolates, sweets, and modern pasalubong items, 
+Good for gift boxes and sweet bundles
+</p>
+
+<p class="location">
+📍 Magalang, Pampanga
+</p>
+
+<a href="#" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+<!-- SHOP 4 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/chabelita.jpg" alt="Adventure Gear Shop">
+
+<div class="card-content">
+
+<h2>Chabelitas Pasalubong</h2>
+
+<p>
+Sells mixed pasalubong items, 
+Polvoron, snacks, local delicacies, 
+Easy stop for quick take-home goodies
+
+</p>
+
+<p class="location">
+📍 Magalang, Pampanga
+</p>
+
+<a href="#" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+<!-- SHOP 5 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/erina.jpg" alt="Adventure Gear Shop">
+
+<div class="card-content">
+
+<h2>Erina's Pasalubong ATBP</h2>
+
+<p>
+Variety of Kapampangan snacks & sweets,
+ Good for bulk pasalubong buying
+
+</p>
+
+<p class="location">
+📍 Magalang, Pampanga
+</p>
+
+<a href="#" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+<!-- SHOP 6 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/first.jpg" alt="Adventure Gear Shop">
+
+<div class="card-content">
+
+<h2>1st Honor Pasalubong Store </h2>
+
+<p>
+Sells pasalubong items and local delicacies, 
+Includes sweets, snacks, and packaged Kapampangan goods, 
+Good stop for quick buy along Arayat town proper
+</p>
+
+<p class="location">
+📍 Arayat, Pampanga
+</p>
+
+<a href="#" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+<!-- SHOP 7 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/dory.jpg" alt="Adventure Gear Shop">
+
+<div class="card-content">
+
+<h2>Dory's Store </h2>
+
+<p>
+ Local store known for food and delicacy items, 
+ Sells assorted pasalubong goods and basic grocery sweets, 
+ Budget-friendly option for everyday delicacies
+</p>
+
+<p class="location">
+📍 Arayat, Pampanga
+</p>
+
+<a href="#" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+<!-- SHOP 7 -->
+<div class="product-card">
+
+<img src="../Pictures/p/tindahan/choco.jpg" alt="Adventure Gear Shop">
+
+<div class="card-content">
+
+<h2> Chocolate World </h2>
+
+<p>
+ Chocolates, ice cream, and sweet treats, 
+ Good for modern pasalubong sweets, 
+ Small café-style shop
+</p>
+
+<p class="location">
+📍 Arayat, Pampanga
+</p>
+
+<a href="#" class="order-btn">
+Visit Shop
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

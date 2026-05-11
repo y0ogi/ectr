@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Confirmation</title>
+
+<style>
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+  margin:0;
+  padding:40px 20px;
+}
+
+/* CONTAINER */
+.container{
+  max-width:700px;
+  margin:auto;
+}
+
+/* BOX */
+.box{
+  background:white;
+  border-radius:20px;
+  padding:40px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.1);
+}
+
+/* SUCCESS ICON */
+.check{
+  font-size:70px;
+  margin-bottom:10px;
+}
+
+/* TITLE */
+h1{
+  color:#009688;
+  margin-bottom:10px;
+}
+
+/* TEXT */
+.subtitle{
+  color:#555;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+/* ORDER DETAILS */
+.details{
+  text-align:left;
+  background:#f9f9f9;
+  padding:25px;
+  border-radius:15px;
+  margin-bottom:25px;
+}
+
+.details h2{
+  color:#004d40;
+  margin-bottom:15px;
+}
+
+.details p{
+  margin:10px 0;
+  color:#444;
+  font-size:17px;
+}
+
+/* STATUS */
+.status{
+  background:#e0f2f1;
+  color:#00796b;
+  padding:15px;
+  border-radius:10px;
+  font-weight:bold;
+  margin-bottom:25px;
+}
+
+/* BUTTONS */
+.buttons{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  background:#009688;
+  color:white;
+  padding:14px 25px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:17px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#00796b;
+}
+
+/* SECOND BUTTON */
+.btn-secondary{
+  background:#004d40;
+}
+
+.btn-secondary:hover{
+  background:#00332b;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .box{
+    padding:25px;
+  }
+
+  h1{
+    font-size:28px;
+  }
+
+  .subtitle{
+    font-size:16px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="box">
+
+<h1>✅ Order Submitted!</h1>
+
+<p>
+Thank you for ordering from EcoTravel Local Shops.
+</p>
+
+<p>
+Your order details have been received successfully.
+Please wait for confirmation and delivery updates.
+</p>
+
+<p>
+📦 Estimated Delivery: 2-3 Days
+</p>
+
+<div class="buttons">
+
+<a href="shop.html" class="btn">
+Continue Shopping
+</a>
+
+<a href="../index.html" class="btn btn-secondary">
+Back to Home
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

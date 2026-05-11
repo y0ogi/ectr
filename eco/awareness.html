@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awareness</title>
+
+<style>
+
+body{
+  font-family:Arial;
+  margin:0;
+  background:#e0f2f1;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  background:#004d40;
+  padding:25px 40px;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.logo{
+  color:white;
+  font-size:32px;
+  font-weight:bold;
+}
+
+/* NAV LINKS */
+.nav-links{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ffd54f;
+}
+
+/* CONTENT */
+.content{
+  text-align:center;
+  padding:70px 20px;
+}
+
+.content h1{
+  font-size:60px;
+  margin-bottom:20px;
+  color:#00382f;
+}
+
+.content p{
+  font-size:22px;
+  color:#444;
+}
+
+/* AWARENESS SECTION */
+.awareness-section{
+  max-width:1000px;
+  margin:auto;
+  margin-top:50px;
+  padding:20px;
+}
+
+/* AWARENESS ITEM */
+.awareness-item{
+  background:white;
+  margin-bottom:25px;
+  padding:25px 30px;
+  border-left:8px solid #009688;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.awareness-item:hover{
+  transform:translateX(5px);
+}
+
+.awareness-item h2{
+  margin-bottom:10px;
+  color:#004d40;
+}
+
+.awareness-item p{
+  font-size:18px;
+  color:#555;
+  line-height:1.6;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .nav-links a{
+    font-size:16px;
+  }
+
+  .content h1{
+    font-size:40px;
+  }
+
+  .content p{
+    font-size:18px;
+  }
+
+  .awareness-item{
+    padding:20px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+  <div class="navbar">
+
+    <div class="logo">
+      EcoTravel 🌍
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </div>
+
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <h1>Environmental Awareness 🌱</h1>
+
+  <p>
+    Help protect nature by traveling responsibly.
+  </p>
+
+</div>
+
+<!-- AWARENESS SECTION -->
+<div class="awareness-section">
+
+  <div class="awareness-item">
+    <h2>♻ Reduce Plastic Waste</h2>
+    <p>
+      Bring reusable water bottles, utensils, and eco bags while traveling.
+    </p>
+  </div>
+
+  <div class="awareness-item">
+    <h2>🌳 Protect Nature</h2>
+    <p>
+      Keep tourist spots clean and avoid damaging plants and wildlife.
+    </p>
+  </div>
+
+  <div class="awareness-item">
+    <h2>💧 Save Water</h2>
+    <p>
+      Use water responsibly in resorts, farms, and public places.
+    </p>
+  </div>
+
+  <div class="awareness-item">
+    <h2>🚶 Support Eco Tourism</h2>
+    <p>
+      Visit local eco-friendly destinations and support small communities.
+    </p>
+  </div>
+
+  <div class="awareness-item">
+    <h2>🌍 Keep Earth Clean</h2>
+    <p>
+      Simple actions like proper waste disposal help preserve the environment.
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>

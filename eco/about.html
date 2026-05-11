@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+
+<style>
+
+body{
+  font-family:Arial, sans-serif;
+  margin:0;
+  background:#e0f2f1;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  background:#004d40;
+  padding:25px 40px;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+/* LOGO */
+.logo{
+  color:white;
+  font-size:32px;
+  font-weight:bold;
+}
+
+/* NAV LINKS */
+.nav-links{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ffd54f;
+}
+
+/* ABOUT SECTION */
+.about-section{
+  max-width:1000px;
+  margin:auto;
+  padding:80px 25px;
+  text-align:center;
+}
+
+.about-section h1{
+  font-size:60px;
+  margin-bottom:30px;
+  color:#004d40;
+}
+
+.about-section p{
+  font-size:20px;
+  line-height:1.8;
+  margin-bottom:25px;
+  color:#444;
+}
+
+/* IMAGE */
+.about-image{
+  width:100%;
+  max-width:850px;
+  border-radius:20px;
+  margin-top:30px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .nav-links a{
+    font-size:16px;
+  }
+
+  .about-section h1{
+    font-size:40px;
+  }
+
+  .about-section p{
+    font-size:18px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+  <div class="navbar">
+
+    <div class="logo">
+      EcoTravel 🌍
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </div>
+
+</header>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+
+  <h1>About EcoTravel 🌍</h1>
+
+  <p>
+    EcoTravel Adventures is a tourism website created to help travelers discover beautiful natural destinations, farms, resorts, and outdoor adventures in Magalang Pampanga and Arayat Pampanga.
+  </p>
+
+  <p>
+    Our goal is to promote eco-tourism by encouraging people to explore nature responsibly while supporting local communities and businesses. We believe that traveling can be fun, meaningful, and environmentally friendly at the same time.
+  </p>
+
+  <p>
+    This website provides information about tourist spots, nature adventures, local products, and environmental awareness to inspire people to appreciate and protect the environment.
+  </p>
+
+  <p>
+    Whether you enjoy hiking, swimming, farm tours, or relaxing in nature, EcoTravel helps you find places worth visiting while promoting sustainable travel.
+  </p>
+
+  <img src="../web bg.png" class="about-image">
+
+</section>
+
+</body>
+</html>

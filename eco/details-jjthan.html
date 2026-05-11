@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JJ Than Resort</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#f5f5f5;
+}
+
+/* HEADER */
+header{
+  background:#004d40;
+  padding:20px 8%;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:white;
+  font-size:30px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+}
+
+/* HERO IMAGE */
+.hero img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+}
+
+/* CONTENT */
+.content{
+  padding:50px 10%;
+}
+
+.content h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+.content p{
+  font-size:20px;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+/* GALLERY */
+.gallery{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.gallery img{
+  width:300px;
+  border-radius:15px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* HOVER EFFECT */
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+/* CLICK EFFECT */
+.gallery img.active{
+  transform:scale(1.12);
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  background:#00a152;
+  color:white;
+  padding:14px 30px;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .nav-links a{
+    font-size:16px;
+  }
+
+  .hero img{
+    width:90%;
+    height:220px;
+  }
+
+  .hero-content h1,
+  .content h1{
+    font-size:35px;
+    text-align:center;
+  }
+
+  .hero-content p,
+  .content p{
+    font-size:16px;
+    text-align:center;
+  }
+
+  .cards{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card{
+    width:90%;
+  }
+
+  .gallery{
+    justify-content:center;
+  }
+
+  .gallery img{
+    width:90%;
+  }
+
+  .content{
+    padding:30px 20px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+EcoTravel 🌍
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="awareness.html">Awareness</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+<div class="hero">
+
+<img src="../Pictures/p/JJ Than/jj1.jpg">
+
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h1>🏊 JJ Than Resort</h1>
+
+<p>
+📍 Arayat, Pampanga
+</p>
+
+<p>
+A public swimming pool resort with large cottages, spacious pools, 
+and private villas. It is ideal for family reunions and barkada swimming trips.
+</p>
+
+<p>
+⭐ Rating: ★★★★★
+</p>
+
+<a href="book.html" class="btn">
+Book Now
+</a>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+<img
+src="../Pictures/p/JJ Than/jj2.jpg"
+onclick="this.classList.toggle('active')">
+
+<img
+src="../Pictures/p/JJ Than/jj3.jpg"
+onclick="this.classList.toggle('active')">
+
+<img
+src="../Pictures/p/JJ Than/jj4.jpg"
+onclick="this.classList.toggle('active')">
+
+<img
+src="../Pictures/p/JJ Than/jj5.jpg"
+onclick="this.classList.toggle('active')">
+
+</div>
+
+</div>
+
+</body>
+</html>

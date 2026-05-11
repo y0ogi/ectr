@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+
+<style>
+body{
+  font-family:Arial;
+  text-align:center;
+  margin: 0;
+}
+
+/* HEADER */
+header{
+  background:#004d40;
+  padding:20px 8%;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.logo{
+  color:white;
+  font-size:32px;
+  font-weight:bold;
+}
+
+/* NAV LINKS */
+.nav-links{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ffd54f;
+}
+
+/* CONTACT CONTENT */
+.content{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.content h1{
+  font-size:50px;
+  color:#004d40;
+  margin-bottom:20px;
+}
+
+.subtitle{
+  font-size:20px;
+  color:#555;
+  max-width:700px;
+  margin:auto;
+  line-height:1.6;
+}
+
+.contact-box{
+  background:white;
+  max-width:700px;
+  margin:40px auto;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-box h2{
+  color:#004d40;
+  margin-top:20px;
+}
+
+.contact-box p{
+  color:#555;
+  font-size:18px;
+  margin-top:10px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .nav-links a{
+    font-size:16px;
+  }
+
+  .hero img{
+    width:90%;
+    height:220px;
+  }
+
+  .hero-content h1,
+  .content h1{
+    font-size:35px;
+    text-align:center;
+  }
+
+  .hero-content p,
+  .content p{
+    font-size:16px;
+    text-align:center;
+  }
+
+  .cards{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card{
+    width:90%;
+  }
+
+  .gallery{
+    justify-content:center;
+  }
+
+  .gallery img{
+    width:90%;
+  }
+
+  .content{
+    padding:30px 20px;
+  }
+
+  .content h1{
+  font-size:35px;
+}
+
+.subtitle{
+  font-size:16px;
+}
+
+.contact-box{
+  width:90%;
+  padding:25px;
+}
+
+.contact-box p{
+  font-size:16px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+  <div class="navbar">
+
+    <div class="logo">
+      EcoTravel 🌍
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </div>
+
+</header>
+
+<!-- CONTACT SECTION -->
+<div class="content">
+
+<h1>Contact Us 📞</h1>
+
+<p class="subtitle">
+We would love to hear from you!  
+Feel free to contact EcoTravel for questions, suggestions, and travel inquiries.
+</p>
+
+<div class="contact-box">
+
+<h2>📧 Email</h2>
+<p>ecotravel@gmail.com</p>
+
+<h2>📱 Phone Number</h2>
+<p>0912-345-6789</p>
+
+<h2>📍 Location</h2>
+<p>Magalang & Arayat, Pampanga</p>
+
+<h2>🌐 Social Media</h2>
+<p>Facebook: EcoTravel Adventures</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
